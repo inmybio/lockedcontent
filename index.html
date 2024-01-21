@@ -42,18 +42,31 @@
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
       margin-bottom: 15px; /* Add spacing between rows */
     }
+    .button-container {
+      display: flex;
+      flex-direction: column; /* Align buttons vertically */
+      gap: 10px; /* Add spacing between buttons */
+    }
     .button {
+      position: relative;
       background-color: black;
       color: white;
-      padding: 25px 0; /* Double the vertical padding to increase button height */
+      padding: 25px 130px; /* Adjusted padding for better text centering */
       line-height: 18px;
       border-radius: 25px; /* Add rounded edges */
       cursor: pointer;
-      margin-top: 20px;
       text-decoration: none;
-      display: block;
-      width: 100%;
+      display: flex;
+      align-items: center;
       font-weight: 700;
+    }
+    .button img {
+      width: 50px; /* Adjust image size as needed */
+      height: 50px;
+      border-radius: 25px; /* Equal rounded corners for a square shape */
+      margin-right: 15px; /* Adjusted margin-right */
+      position: absolute;
+      left: 20px; /* Position image to the left */
     }
 
     @keyframes fadeInAndScale {
@@ -74,9 +87,20 @@
     <div class="subheading">
       Choose any deal below to reveal the answer!
     </div>
-    <a class="button" href="https://gotapp.in/0PDvFE4">Get Started 1 ➜</a>
-    <a class="button" href="https://gotapp.in/another-link">Get Started 2 ➜</a>
-    <a class="button" href="https://gotapp.in/yet-another-link">Get Started 3 ➜</a>
+    <div class="button-container">
+      <a class="button" href="https://www.tapplink.co/view/13418/1">
+        <img src="https://i.ibb.co/khkR7rj/IMG-2530.png" alt="Cashapp Image">
+        <span style="margin-left: var(--text-horizontal-padding, 15px);">$750 Cashapp</span>
+      </a>
+      <a class="button" href="https://www.tapplink.co/view/13418/2">
+        <img src="https://i.ibb.co/db9rQpH/IMG-2531.jpg" alt="Amazon Image">
+        <span style="margin-left: var(--text-horizontal-padding, 15px);">$1,000 Amazon</span>
+      </a>
+      <a class="button" href="https://www.tapplink.co/view/13418/25">
+        <img src="https://i.ibb.co/p3Vm4nw/IMG-2532.webp" alt="Shein Image">
+        <span style="margin-left: var(--text-horizontal-padding, 15px);">$750 Shein</span>
+      </a>
+    </div>
   </div>
 </body>
 </html>
